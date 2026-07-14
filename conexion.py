@@ -2,10 +2,6 @@ import mysql.connector
 from mysql.connector import Error
 
 def conectar():
-    """
-    Establece conexión con la base de datos 'biblioteca' en XAMPP
-    Devuelve el objeto de conexión o None si hay error
-    """
     try:
         conexion = mysql.connector.connect(
             host="localhost",
