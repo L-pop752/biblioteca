@@ -1,6 +1,3 @@
-# 1_conexion_db.py
-# Propósito: Conectar Python con la base de datos MySQL en XAMPP
-
 import mysql.connector
 from mysql.connector import Error
 
@@ -11,10 +8,10 @@ def conectar():
     """
     try:
         conexion = mysql.connector.connect(
-            host="localhost",           # Dirección del servidor (siempre es así en XAMPP)
-            user="root",                # Usuario predeterminado de XAMPP
-            password="",                # Contraseña predeterminada: vacía
-            database="biblioteca"       # Nombre de la base que creaste
+            host="localhost",
+            user="root",
+            password="",
+            database="biblioteca"
         )
         if conexion.is_connected():
             return conexion
